@@ -42,6 +42,7 @@ def startVote(message, setVoteName):
     voteName = setVoteName
     options = []
     votes = []
+    voted = {}
     voteCloseTime = time.time() + 60*60 #give an hour to vote
 
     voteChannel = message._body["channel"]
